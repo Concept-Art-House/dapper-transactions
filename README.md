@@ -1,1 +1,9 @@
-# dapper-transactions
+## dapper supported transactions
+
+### testnet
+
+7a0a3b82bf38410e0b7f708ecf52401a5ca1cee94a339efa3da966bd58eb7213 create-account.cdc
+cf6a0d6e9ce757db54d7780ccd95ad05a0aff3a5da51f05338802fe8924c3c4f initialize-account.cdc
+0a279aae60910c4d926f3b3c65e546c1bfbab73df67660430bd13284fbfa3704 remove-listing.cdc
+eeaa5cc17c1f5cf4326cc4f23d1bd3a0b36cc15da7f4d05ef328b2cf5f1c6470 purchase-nft-marketplace.cdc
+4905802ddb8d2fe2a27e703e7e3d2bdfc2f4fb02bc97eb16e2b7068969060708 purchase-nft-direct.cdc

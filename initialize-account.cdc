@@ -16,8 +16,8 @@ transaction {
         }
         if collector.borrow<&UFC_NFT.Collection>(from: UFC_NFT.CollectionStoragePath) == nil {
             let collection2 <- UFC_NFT.createEmptyCollection()
-            signer.save<@NonFungibleToken.Collection>(<-collection2, to: UFC_NFT.CollectionStoragePath)
-            signer.link<&{NonFungibleToken.CollectionPublic}>(UFC_NFT.CollectionPublicPath, target: UFC_NFT.CollectionStoragePath)
+            collector.save<@NonFungibleToken.Collection>(<-collection2, to: UFC_NFT.CollectionStoragePath)
+            collector.link<&{NonFungibleToken.CollectionPublic}>(UFC_NFT.CollectionPublicPath, target: UFC_NFT.CollectionStoragePath)
         }
     }
 }

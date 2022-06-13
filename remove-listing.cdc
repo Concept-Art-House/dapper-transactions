@@ -1,4 +1,4 @@
-import NFTStorefront from 0x30b1e8c26734cc64
+import NFTStorefront from 0x94cc7682f79aa725
 
 // This transaction removes a NFT listing fron the user's storefront.
 transaction(listingResourceID: UInt64) {

@@ -1,8 +1,8 @@
 import FungibleToken from 0x9a0766d93b6608b7
 import NonFungibleToken from 0x631e88ae7f1d7c20
-import NFTStorefront from 0x30b1e8c26734cc64
-import DapperUtilityCoin from 0x82ec283f88a62e65
-import UFC_FIGHTER_NFT from 0x30b1e8c26734cc64
+import NFTStorefront from 0x94cc7682f79aa725
+import DapperUtilityCoin from 0x94cc7682f79aa725
+import UFC_FIGHTER_NFT from 0x94cc7682f79aa725
 
 // This transaction purchases an NFT from a dapp directly (i.e. **not** on a peer-to-peer marketplace).
 transaction(storefrontAddress: Address, listingResourceID: UInt64, expectedPrice: UFix64) {
@@ -50,7 +50,7 @@ transaction(storefrontAddress: Address, listingResourceID: UInt64, expectedPrice
 
     pre {
         self.salePrice == expectedPrice: "unexpected price"
-        self.dappAddress == 0x30b1e8c26734cc64 && self.dappAddress == storefrontAddress: "Requires valid authorizing signature"
+        self.dappAddress == 0x94cc7682f79aa725 && self.dappAddress == storefrontAddress: "Requires valid authorizing signature"
     }
 
     execute {
